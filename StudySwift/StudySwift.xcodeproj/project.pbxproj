@@ -13,6 +13,9 @@
 		4C7DFDF51E485CA500223490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7DFDF41E485CA500223490 /* Assets.xcassets */; };
 		4C7DFDF81E485CA500223490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7DFDF61E485CA500223490 /* LaunchScreen.storyboard */; };
 		4C7DFE001E485ED600223490 /* URLConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DFDFF1E485ED600223490 /* URLConnectionController.swift */; };
+		4CDFC3631E4967D500280320 /* SimplePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFC3621E4967D500280320 /* SimplePlayerController.swift */; };
+		4CDFC3651E49733A00280320 /* 林俊杰-修炼爱情.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CDFC3641E49733A00280320 /* 林俊杰-修炼爱情.mp3 */; };
+		4CDFC3681E49789900280320 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDFC3671E49789900280320 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4C7DFDF71E485CA500223490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C7DFDF91E485CA500223490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7DFDFF1E485ED600223490 /* URLConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConnectionController.swift; sourceTree = "<group>"; };
+		4CDFC3621E4967D500280320 /* SimplePlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePlayerController.swift; sourceTree = "<group>"; };
+		4CDFC3641E49733A00280320 /* 林俊杰-修炼爱情.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "林俊杰-修炼爱情.mp3"; sourceTree = "<group>"; };
+		4CDFC3671E49789900280320 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDFC3681E49789900280320 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				4C7DFDEC1E485CA500223490 /* StudySwift */,
 				4C7DFDEB1E485CA500223490 /* Products */,
+				4CDFC3661E49789900280320 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +67,22 @@
 				4C7DFDED1E485CA500223490 /* AppDelegate.swift */,
 				4C7DFDEF1E485CA500223490 /* ViewController.swift */,
 				4C7DFDFF1E485ED600223490 /* URLConnectionController.swift */,
+				4CDFC3621E4967D500280320 /* SimplePlayerController.swift */,
 				4C7DFDF11E485CA500223490 /* Main.storyboard */,
+				4CDFC3641E49733A00280320 /* 林俊杰-修炼爱情.mp3 */,
 				4C7DFDF41E485CA500223490 /* Assets.xcassets */,
 				4C7DFDF61E485CA500223490 /* LaunchScreen.storyboard */,
 				4C7DFDF91E485CA500223490 /* Info.plist */,
 			);
 			path = StudySwift;
+			sourceTree = "<group>";
+		};
+		4CDFC3661E49789900280320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CDFC3671E49789900280320 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDFC3651E49733A00280320 /* 林俊杰-修炼爱情.mp3 in Resources */,
 				4C7DFDF81E485CA500223490 /* LaunchScreen.storyboard in Resources */,
 				4C7DFDF51E485CA500223490 /* Assets.xcassets in Resources */,
 				4C7DFDF31E485CA500223490 /* Main.storyboard in Resources */,
@@ -142,6 +161,7 @@
 			files = (
 				4C7DFE001E485ED600223490 /* URLConnectionController.swift in Sources */,
 				4C7DFDF01E485CA500223490 /* ViewController.swift in Sources */,
+				4CDFC3631E4967D500280320 /* SimplePlayerController.swift in Sources */,
 				4C7DFDEE1E485CA500223490 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +326,7 @@
 				4C7DFDFE1E485CA500223490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

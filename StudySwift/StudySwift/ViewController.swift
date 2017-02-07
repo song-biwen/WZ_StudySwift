@@ -18,7 +18,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.brown;
-        dataSource = ["URLConnectionController"];
+        dataSource = ["URLConnectionController","SimplePlayerController"];
         
         setupUI();
     }
