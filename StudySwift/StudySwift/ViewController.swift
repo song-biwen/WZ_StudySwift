@@ -7,6 +7,9 @@
 //
 
 import UIKit
+enum Week {
+    case Mon,Tue,Wed,Thi,Fri,Sat,Sun;
+}
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -17,12 +20,44 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(Week.Wed.hashValue);
+        
         self.view.backgroundColor = UIColor.brown;
-        dataSource = ["URLConnectionController","SimplePlayerController"];
+        dataSource = ["URLConnectionController","SimplePlayerController","SignViewController"];
         
         setupUI();
+        
+        var str:String!;
+        str = "123";
+        print("int ...   \(Int(str))");
+        
+        if Int(str) == 123 {
+            print("/////    Sucess");
+        }
+        
+        //闭包
+        function0 { (a:Int) -> Int in
+            return a;
+        }
+        
+        for index in 1...5 {
+            print("\(index) index is \(index)")
+        }
+        
+        //for循环变量字典数组
+        let userInfo = ["name":"songbiwen","age":"27","height":"162","weight":"120"];
+        for key in userInfo {
+            print("user \(key.key) is \(key.value)");
+        }
+        
     }
 
+    //闭包
+    func function0(closure:(Int)->Int) {
+        let result = closure(0);
+        print(result);
+    }
+    
     func setupUI() {
         
         var frame = self.view.bounds;
