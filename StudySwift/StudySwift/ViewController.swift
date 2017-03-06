@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 enum Week {
     case Mon,Tue,Wed,Thi,Fri,Sat,Sun;
 }
@@ -22,8 +23,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         print(Week.Wed.hashValue);
         
-        self.view.backgroundColor = UIColor.brown;
-        dataSource = ["URLConnectionController","SimplePlayerController","SignViewController"];
+        dataSource = ["URLConnectionController","SimplePlayerController",
+                      "SignViewController","MapViewController",
+                        ];
         
         setupUI();
         
@@ -52,6 +54,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
 
+    
+    
+    
     //闭包
     func function0(closure:(Int)->Int) {
         let result = closure(0);
@@ -61,7 +66,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func setupUI() {
         
         var frame = self.view.bounds;
-        frame.origin.y = frame.origin.y + 64;
         tableView = UITableView(frame: frame, style: UITableViewStyle.plain);
         tableView?.delegate = self;
         tableView?.dataSource = self;
@@ -84,6 +88,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: false);
+        
         // 1.获取命名空间
         guard let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] else {
             print("命名空间不存在")

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C52C9231E6CEEA9000D1E36 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C52C9221E6CEEA9000D1E36 /* MapKit.framework */; };
+		4C52C9251E6CF4F2000D1E36 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C52C9241E6CF4F2000D1E36 /* Places.plist */; };
+		4C52C9271E6CF50E000D1E36 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C52C9261E6CF50E000D1E36 /* Places.swift */; };
 		4C5365A41E51556F00FBCBCC /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5365A31E51556F00FBCBCC /* SignViewController.swift */; };
+		4C5B9A281E6953B900C514BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B9A271E6953B900C514BA /* MapViewController.swift */; };
 		4C7DFDEE1E485CA500223490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DFDED1E485CA500223490 /* AppDelegate.swift */; };
 		4C7DFDF01E485CA500223490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DFDEF1E485CA500223490 /* ViewController.swift */; };
 		4C7DFDF31E485CA500223490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7DFDF11E485CA500223490 /* Main.storyboard */; };
@@ -20,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C52C9221E6CEEA9000D1E36 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4C52C9241E6CF4F2000D1E36 /* Places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		4C52C9261E6CF50E000D1E36 /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 		4C5365A31E51556F00FBCBCC /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		4C5B9A271E6953B900C514BA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4C7DFDEA1E485CA500223490 /* StudySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7DFDED1E485CA500223490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7DFDEF1E485CA500223490 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C52C9231E6CEEA9000D1E36 /* MapKit.framework in Frameworks */,
 				4CDFC3681E49789900280320 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,11 +80,14 @@
 				4C7DFDFF1E485ED600223490 /* URLConnectionController.swift */,
 				4CDFC3621E4967D500280320 /* SimplePlayerController.swift */,
 				4C5365A31E51556F00FBCBCC /* SignViewController.swift */,
+				4C5B9A271E6953B900C514BA /* MapViewController.swift */,
+				4C52C9261E6CF50E000D1E36 /* Places.swift */,
 				4C7DFDF11E485CA500223490 /* Main.storyboard */,
 				4CDFC3641E49733A00280320 /* 林俊杰-修炼爱情.mp3 */,
 				4C7DFDF41E485CA500223490 /* Assets.xcassets */,
 				4C7DFDF61E485CA500223490 /* LaunchScreen.storyboard */,
 				4C7DFDF91E485CA500223490 /* Info.plist */,
+				4C52C9241E6CF4F2000D1E36 /* Places.plist */,
 			);
 			path = StudySwift;
 			sourceTree = "<group>";
@@ -83,6 +95,7 @@
 		4CDFC3661E49789900280320 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C52C9221E6CEEA9000D1E36 /* MapKit.framework */,
 				4CDFC3671E49789900280320 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -149,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDFC3651E49733A00280320 /* 林俊杰-修炼爱情.mp3 in Resources */,
+				4C52C9251E6CF4F2000D1E36 /* Places.plist in Resources */,
 				4C7DFDF81E485CA500223490 /* LaunchScreen.storyboard in Resources */,
 				4C7DFDF51E485CA500223490 /* Assets.xcassets in Resources */,
 				4C7DFDF31E485CA500223490 /* Main.storyboard in Resources */,
@@ -163,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C7DFE001E485ED600223490 /* URLConnectionController.swift in Sources */,
+				4C5B9A281E6953B900C514BA /* MapViewController.swift in Sources */,
 				4C7DFDF01E485CA500223490 /* ViewController.swift in Sources */,
+				4C52C9271E6CF50E000D1E36 /* Places.swift in Sources */,
 				4C5365A41E51556F00FBCBCC /* SignViewController.swift in Sources */,
 				4CDFC3631E4967D500280320 /* SimplePlayerController.swift in Sources */,
 				4C7DFDEE1E485CA500223490 /* AppDelegate.swift in Sources */,
